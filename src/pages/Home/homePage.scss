@@ -1,0 +1,178 @@
+$black-color: #000000;
+$white-color: #ffffff;
+$orange-color: #ffbb00;
+$silver-color: #595959;
+
+@mixin centering() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin title-white() {
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@mixin title-black() {
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@mixin description() {
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #b3b3b3;
+}
+
+@mixin button() {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 10px;
+
+  background: linear-gradient(180deg, #ffbb00 0%, #f2a60c 100%);
+  border-radius: 5px;
+  font-family: "Poppins";
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+
+  color: #332200;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.home-container {
+  @include centering();
+  height: 680px;
+  width: 1600px;
+  background-color: $black-color;
+  color: $white-color;
+}
+
+.header-post {
+  display: flex;
+
+  margin-right: 140px;
+
+  &-dec {
+    width: 52px;
+    height: 52px;
+    margin-left: 40px;
+    margin-top: 588px;
+  }
+  &-text {
+    margin-left: 128px;
+  }
+
+  &-title {
+    @include title-white();
+    margin-top: 196px;
+    height: 144px;
+    width: 578px;
+    left: 220px;
+    top: 290px;
+    border-radius: nullpx;
+  }
+
+  &-description {
+    @include description();
+    width: 553px;
+    height: 108px;
+    left: 220px;
+    top: 470px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+
+  &-button {
+    @include button();
+  }
+}
+
+.orange-point {
+  color: $orange-color;
+}
+
+.catalog-container {
+  height: 734px;
+  width: 1460px;
+}
+
+.catalog-cards {
+  margin-left: 70px;
+  margin-right: -70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-card {
+  &-img {
+    height: 520px;
+    width: 460px;
+    border-radius: 5px;
+  }
+
+  &-description {
+    color: $black-color;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    margin-left: 15px;
+  }
+
+  &-price {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: $silver-color;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+}
+
+.orange-mark {
+  width: 12px;
+  height: 8px;
+  color: $orange-color;
+  margin-top: 5px;
+  margin-left: -15px;
+  font-size: 18px;
+}
+
+.catalog-title {
+  @include title-black();
+  color: $black-color;
+
+  height: 72px;
+  margin-left: 205px;
+  margin-top: 114px;
+  border-radius: nullpx;
+  margin-bottom: 40px;
+}

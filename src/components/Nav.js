@@ -1,20 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import headlines from "./headlines.module.scss"
+import "./headlines.scss"
 
 
 
 const Nav = () => {
     return (
         <header>
-            <div className={headlines["container"]} >
+            <div className={"container"} >
 
-                <Link className={headlines["headlines headline-bikcraft"]} to="/">bikcraft</Link>
-                <Link className={headlines["headlines"]} to="/bicicletas">Bicicletas</Link>
-                <Link className={headlines["headlines"]} to="/bicicleta-interna"></Link>
-                <Link className={headlines["headlines"]} to="/seguros">Seguros</Link>
-                <Link className={headlines["headlines"]} to="/contato">Contato</Link>
-                <Link className={headlines["headlines"]} to="/termos"></Link>
+                <Link className="headlines headlines-bikcraft" to="/">bikcraft</Link>
+
+                <div className="headlines-others-container">
+                    <Link className="headlines headlines-others" to="/bicicletas">Bicicletas</Link>
+                    <Link className="headlines" to="/seguros">Seguros</Link>
+                    <Link className="headlines" to="/contato">Contato</Link>
+                </div>
+                
+                <Link className="headlines" to="/bicicleta-interna"></Link>
+                <Link className="headlines" to="/termos"></Link>
 
             </div>
 
