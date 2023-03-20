@@ -28,17 +28,17 @@ const HomePage = () => {
                 <div className="catalog-cards">
                     <div className="catalog-card-item">
                         <img className="catalog-card-img" src={bicicleta2 } alt="" />
-                        <div className="catalog-card-description"><li className="orange-mark"></li>Magic Migth</div>
+                        <div className="catalog-card-description">Magic Migth</div>
                         <div className="catalog-card-price">R$ 2499</div>
                     </div>
                     <div className="catalog-card-item">
                         <img className="catalog-card-img" src={bicicleta1 } alt="" />
-                        <div className="catalog-card-description"><li className="orange-mark "></li>Nimbus Stark</div>
+                        <div className="catalog-card-description">Nimbus Stark</div>
                         <div className="catalog-card-price">R$ 4909</div>
                     </div>
                     <div className="catalog-card-item">
                         <img className="catalog-card-img" src={bicicleta3 } alt="" />
-                        <div className="catalog-card-description"><li className="orange-mark"></li>Nebula Cosmic</div>
+                        <div className="catalog-card-description">Nebula Cosmic</div>
                         <div className="catalog-card-price">R$ 3999 </div>
                     </div>
                 </div>
