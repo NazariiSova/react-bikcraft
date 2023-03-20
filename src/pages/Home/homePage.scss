@@ -1,7 +1,8 @@
 $black-color: #000000;
 $white-color: #ffffff;
 $orange-color: #ffbb00;
-$silver-color: #595959;
+$light-gray-color: #b3b3b3;
+$dark-gray-color: #595959;
 
 @mixin centering() {
   margin-left: auto;
@@ -35,7 +36,7 @@ $silver-color: #595959;
   font-size: 24px;
   line-height: 36px;
 
-  color: #b3b3b3;
+  color: $light-gray-color;
 }
 
 @mixin button() {
@@ -119,6 +120,7 @@ $silver-color: #595959;
 .catalog-container {
   height: 734px;
   width: 1460px;
+  margin-bottom: 200px;
 }
 
 .catalog-cards {
@@ -142,10 +144,10 @@ $silver-color: #595959;
     font-weight: 600;
     font-size: 32px;
     line-height: 40px;
-    
+
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px; 
+    margin-right: 10px;
 
     &::before {
       content: "";
@@ -165,13 +167,11 @@ $silver-color: #595959;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    color: $silver-color;
+    color: $dark-gray-color;
     margin-left: 15px;
     margin-top: 5px;
   }
 }
-
-
 
 .catalog-title {
   @include title-black();
@@ -182,4 +182,113 @@ $silver-color: #595959;
   margin-top: 114px;
   border-radius: nullpx;
   margin-bottom: 40px;
+}
+
+.diferencial-container {
+  @include centering();
+  height: 960px;
+  width: 1600px;
+  background-color: $black-color;
+  margin-bottom: 200px;
+  display: flex;
+}
+
+.diferencial-text-container {
+  margin-left: 220px;
+  margin-top: 80px;
+  margin-right: 66px;
+}
+
+.diferencial-text {
+  &-title {
+    color: $light-gray-color;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &-subtitle {
+    width: 549px;
+    height: 216px;
+    left: 220px;
+    top: 2072px;
+    margin-bottom: 20px;
+
+    @include title-white();
+  }
+
+  &-content {
+    margin-bottom: 20px;
+    width: 534px;
+    height: 180px;
+
+    @include description();
+  }
+
+  &-button {
+    color: $orange-color;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &-button-underline {
+    width: 261px;
+    height: 4px;
+    left: 220px;
+    top: 2544px;
+    background-color: $orange-color;
+    margin-bottom: 81px;
+  }
+
+  &-footer-container {
+    display: flex;
+  }
+
+  &-first {
+    margin-right: 40px;
+  }
+
+  &-footer-title {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  &-footer-content {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 239px;
+    height: 116px;
+    color: $light-gray-color;
+  }
+}
+
+.diferencial-img{
+  height: 1120px;
+  width: 700px;
+  border-radius: 0px;
+  margin-top: -80px;
+}
+
+
+.partners-title{
+  @include title-black();
+  color: $black-color;
+  text-transform: lowercase;
 }

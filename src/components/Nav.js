@@ -7,7 +7,7 @@ import "./headlines.scss"
 const Nav = () => {
     return (
         <header>
-            <div className={"container"} >
+            <div className="container" >
 
                 <Link className="headlines headlines-bikcraft" to="/">bikcraft</Link>
 
@@ -21,6 +21,7 @@ const Nav = () => {
                 <Link className="headlines" to="/termos"></Link>
 
             </div>
+
 
         </header>
 
