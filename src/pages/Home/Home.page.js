@@ -22,6 +22,10 @@ import wildbeast from "./imgHome/imgParceiros/wildbeast.png"
 import flexblog from "./imgHome/imgParceiros/flexblog.png"
 import lescone from "./imgHome/imgParceiros/lescone.png"
 
+import partners from "./imgHome/depoimento.png"
+
+import quotationMarck from "./imgHome/quotationMarck.png"
+
 const HomePage = () => {
     return (
         <div className="home-container">
@@ -60,8 +64,9 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="diferencial-container">
-
+                <img className="diferencial-dec" src={dec} alt="dec" />
                 <div className="diferencial-text-container">
+
                     <div className="diferencial-text-title">Tecnologia avançada</div>
                     <div className="diferencial-text-subtitle">Você escolhe as suas cores e componentes</div>
                     <div className="diferencial-text-content">Cada Bikcraft é única e possui a sua identidade. As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores.</div>
@@ -80,6 +85,7 @@ const HomePage = () => {
                             <div className="diferencial-text-footer-content">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <img src={diferencial} alt="diferencial" className="diferencial-img"></img>
@@ -89,9 +95,8 @@ const HomePage = () => {
                 <div className="partners-title">Nossos parceiros</div>
 
                 <div className="partners-img-container">
-
                     <div className="partners-row horizontal-line">
-                        <div className="partners-img partners-img-first  partners-img-first-top"><img  src={ranek} alt="ranek" /></div>
+                        <div className="partners-img partners-img-first  partners-img-first-top"><img src={ranek} alt="ranek" /></div>
                         <div className="partners-img partners-img-second partners-img-second-top"><img src={caravan} alt="caravan" /></div>
                         <div className="partners-img partners-img-third partners-img-third-top"><img src={dogs} alt="dogs" /></div>
                         <div className="partners-img partners-img-last partners-img-last-top"><img src={handel} alt="handel" /></div>
@@ -100,15 +105,39 @@ const HomePage = () => {
                     <div className="partners-row partners-row-second">
                         <div className="partners-img partners-img-first"><img src={surfbot} alt="surfbot" /></div>
                         <div className="partners-img partners-img-second"><img src={wildbeast} alt="wildbeast" /></div>
-                        <div className="partners-img partners-img-third"><img  src={flexblog} alt="flexblog" /></div>
+                        <div className="partners-img partners-img-third"><img src={flexblog} alt="flexblog" /></div>
                         <div className="partners-img partners-img-last"><img src={lescone} alt="lescone" /></div>
                     </div>
-
                 </div>
-
 
             </div>
 
+            <div className="response-container">
+                <div className="response-img">
+                    <img src={partners} alt="depoimento" />
+                </div>
+                <div className="response-content-container">
+                    <img className="response-dec-first" src={dec} alt="dec" />
+                    <div className="response-text">
+                        <div className="response-text-mark-first">
+                            <img src={quotationMarck} alt="quotationMarck" />
+                        </div>
+
+                        <div className="response-text-container">Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo. </div>
+
+                        <div className="response-text-mark-second">
+                            <img src={quotationMarck} alt="quotationMarck" />
+                        </div>
+                        <div className="response-author">Ana Júlia</div>
+                    </div>
+                    <img className="response-dec-second" src={dec} alt="dec" />
+                </div>
+            </div>
+
+
+            <div className="support-container">
+                <div className="support-title">seguros</div>
+            </div>
 
         </div >
 
