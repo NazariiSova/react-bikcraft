@@ -3,6 +3,7 @@ $white-color: #ffffff;
 $orange-color: #ffbb00;
 $light-gray-color: #b3b3b3;
 $dark-gray-color: #595959;
+$line-gray-color: #ededed;
 
 @mixin centering() {
   margin-left: auto;
@@ -96,6 +97,12 @@ $dark-gray-color: #595959;
     left: 220px;
     top: 290px;
     border-radius: nullpx;
+    
+
+    &:after {
+      content: ".";
+      color: $orange-color
+    }
   }
 
   &-description {
@@ -111,10 +118,6 @@ $dark-gray-color: #595959;
   &-button {
     @include button();
   }
-}
-
-.orange-point {
-  color: $orange-color;
 }
 
 .catalog-container {
@@ -182,6 +185,10 @@ $dark-gray-color: #595959;
   margin-top: 114px;
   border-radius: nullpx;
   margin-bottom: 40px;
+  &:after {
+    content: ".";
+    color: $orange-color
+  }
 }
 
 .diferencial-container {
@@ -220,6 +227,10 @@ $dark-gray-color: #595959;
     margin-bottom: 20px;
 
     @include title-white();
+    &:after {
+      content: ".";
+      color: $orange-color
+    }
   }
 
   &-content {
@@ -279,16 +290,80 @@ $dark-gray-color: #595959;
   }
 }
 
-.diferencial-img{
+.diferencial-img {
   height: 1120px;
   width: 700px;
   border-radius: 0px;
   margin-top: -80px;
 }
 
-
-.partners-title{
+.partners-title {
   @include title-black();
   color: $black-color;
   text-transform: lowercase;
+  margin-left: 220px;
+  &:after {
+    content: ".";
+    color: $orange-color
+  }
+}
+.partners-img-container {
+  flex-direction: column;
+  display: flex;
+}
+.partners-container {
+  display: flex;
+  flex-direction: column;
+}
+.partners-row {
+  display: flex;
+  width: 100%;
+  div {
+    width: 348px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.horizontal-line {
+  width: 1400px;
+  border-bottom: 2px solid $line-gray-color;
+  margin-left: 58px;
+  margin-right: 100px;
+}
+
+.partners-img {
+  padding-top: 49px;
+  padding-bottom: 45px;
+  &-first {
+    margin-left: 40px;
+    &-top {
+      padding-right: 70px;
+      padding-left: 20px;
+    }
+  }
+  &-second {
+    border-left: 2px solid $line-gray-color;
+    &-top {
+      padding-right: 75px;
+      padding-left: 73px;
+    }
+  }
+
+  &-third {
+    border-left: 2px solid $line-gray-color;
+    &-top {
+      padding-right: 71px;
+      padding-left: 78px;
+    }
+  }
+
+  &-last {
+    padding-right: 115px;
+    border-left: 2px solid $line-gray-color;
+    &-top {
+      padding-left: 55px;
+    }
+  }
 }

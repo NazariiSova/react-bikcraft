@@ -12,25 +12,35 @@ import firstIcon from "./imgHome/first.png"
 import secondIcon from "./imgHome/second.png"
 import diferencial from "./imgHome/diferencial.png"
 
+import ranek from "./imgHome/imgParceiros/ranek.png"
+import caravan from "./imgHome/imgParceiros/caravan.png"
+import dogs from "./imgHome/imgParceiros/dogs.png"
+import handel from "./imgHome/imgParceiros/handel.png"
+
+import surfbot from "./imgHome/imgParceiros/surfbot.png"
+import wildbeast from "./imgHome/imgParceiros/wildbeast.png"
+import flexblog from "./imgHome/imgParceiros/flexblog.png"
+import lescone from "./imgHome/imgParceiros/lescone.png"
+
 const HomePage = () => {
     return (
         <div className="home-container">
 
-            <div className="header-post">
+            <div div className="header-post" >
 
                 <img className="header-post-dec" src={dec} alt="dec" />
                 <div className="header-post-text">
 
-                    <div className="header-post-title">bicicletas feitas sob medida<span className="orange-point">.</span></div>
+                    <div className="header-post-title">bicicletas feitas sob medida</div>
                     <div className="header-post-description">Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</div>
                     <button className="header-post-button">Selecione a sua</button>
                 </div>
                 <img src={imgIntro} alt="img-intro" />
 
-            </div>
+            </div >
 
             <div className="catalog-container">
-                <div className="catalog-title">escohola a sua<span className="orange-point">.</span></div>
+                <div className="catalog-title">escohola a sua</div>
                 <div className="catalog-cards">
                     <div className="catalog-card-item">
                         <img className="catalog-card-img" src={bicicleta2} alt="" />
@@ -53,7 +63,7 @@ const HomePage = () => {
 
                 <div className="diferencial-text-container">
                     <div className="diferencial-text-title">Tecnologia avançada</div>
-                    <div className="diferencial-text-subtitle">Você escolhe as suas cores e componentes<span className="orange-point">.</span></div>
+                    <div className="diferencial-text-subtitle">Você escolhe as suas cores e componentes</div>
                     <div className="diferencial-text-content">Cada Bikcraft é única e possui a sua identidade. As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores.</div>
                     <Link className="headlines diferencial-text-button" to="/bicicleta-interna">ESCOLHA UM MODELO</Link>
                     <div className="diferencial-text-button-underline"></div>
@@ -76,11 +86,35 @@ const HomePage = () => {
 
             </div>
             <div className="partners-container">
-                <div className="partners-title">Nossos parceiros<span className="orange-point">.</span></div>
+                <div className="partners-title">Nossos parceiros</div>
+
+                <div className="partners-img-container">
+
+                    <div className="partners-row horizontal-line">
+                        <div className="partners-img partners-img-first  partners-img-first-top"><img  src={ranek} alt="ranek" /></div>
+                        <div className="partners-img partners-img-second partners-img-second-top"><img src={caravan} alt="caravan" /></div>
+                        <div className="partners-img partners-img-third partners-img-third-top"><img src={dogs} alt="dogs" /></div>
+                        <div className="partners-img partners-img-last partners-img-last-top"><img src={handel} alt="handel" /></div>
+                    </div>
+
+                    <div className="partners-row partners-row-second">
+                        <div className="partners-img partners-img-first"><img src={surfbot} alt="surfbot" /></div>
+                        <div className="partners-img partners-img-second"><img src={wildbeast} alt="wildbeast" /></div>
+                        <div className="partners-img partners-img-third"><img  src={flexblog} alt="flexblog" /></div>
+                        <div className="partners-img partners-img-last"><img src={lescone} alt="lescone" /></div>
+                    </div>
+
+                </div>
+
+
             </div>
 
 
-        </div>
+        </div >
+
+
+
+
 
     )
 };
