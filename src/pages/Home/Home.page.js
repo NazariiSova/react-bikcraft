@@ -137,6 +137,59 @@ const HomePage = () => {
 
             <div className="support-container">
                 <div className="support-title">seguros</div>
+                <div className="support-options">
+
+                    <div className="support-silver-container">
+                        <div className="support-silver-left">
+
+                            <div className="support-silver-title">PRATA</div>
+                            <div className="support-silver-list">
+                                <ul className="support-silver-ul">
+                                    <li>Duas trocas por ano</li>
+                                    <li>Assistência técnica</li>
+                                    <li>Suporte 08h às 18h</li>
+                                    <li>Cobertura estatual</li>
+                                </ul>
+                            </div>
+                            <Link className="support-silver-button" to="/Seguros">INSCREVA-SE</Link>
+
+                        </div>
+                        <div className="support-silver-left">
+
+                            <div className="support-silver-prise">R$ 199</div>
+                            <Link className="support-termos" to="/termos">mensal</Link>
+
+                        </div>
+
+
+                    </div>
+                    <div className="support-gold-container">
+                        <div className="support-silver-left">
+
+                            <div className="support-gold-title">OURO</div>
+                            <div className="support-gold-list">
+                                <ul className="support-gold-ul">
+                                    <li>Cinco trocas por ano</li>
+                                    <li>Assistência especial</li>
+                                    <li>Suporte 24h</li>
+                                    <li>Cobertura nacional</li>
+                                    <li>Descontos em parceiros</li>
+                                    <li>Acesso ao Clube Bikecraft</li>
+                                </ul>
+                            </div>
+                            <Link className="support-gold-button" to="/Seguros">INSCREVA-SE</Link>
+
+                        </div>
+                        <div className="support-gold-left">
+
+                            <div className="support-gold-prise">R$ 299</div>
+                            <Link className="support-termos" to="/termos">mensal</Link>
+
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
         </div >
