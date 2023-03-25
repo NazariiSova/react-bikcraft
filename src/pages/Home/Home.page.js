@@ -3,6 +3,7 @@ import "./homePage.scss";
 import imgIntro from "./imgHome/img-intro.png";
 import dec from "./imgHome/dec.svg"
 import { Link } from "react-router-dom";
+import Footer from '../../components/footer/Footer';
 
 import bicicleta1 from "./imgHome/bicicleta1.png"
 import bicicleta2 from "./imgHome/bicicleta2.png"
@@ -26,9 +27,7 @@ import partners from "./imgHome/depoimento.png"
 
 import quotationMarck from "./imgHome/quotationMarck.png"
 
-import instagram from "./imgHome/imgSocial/instagram.png"
-import facebook from './imgHome/imgSocial/facebook.png'
-import youtube from "./imgHome/imgSocial/youtube.png"
+
 
 const HomePage = () => {
     return (
@@ -196,39 +195,7 @@ const HomePage = () => {
                 <img className="support-dec" src={dec} alt="dec" />
             </div>
 
-            <div className="footer-container">
-
-                <div className="footer-bikcraft"><Link className="footer-bikcraft" to="/">bikcraft</Link></div>
-                <div className="footer-info">
-                    <div className="footer-info-title">Contato</div>
-                    <div className="footer-info-list">
-                        <ul className="footer-info-ul">
-                            <li>+55 22 99999-9999</li>
-                            <li>contato@bikcraft.com</li>
-                        </ul>
-                        <ul className="footer-info-ul">
-                            <li>Rua Ali Perto, 42 - Botafogo</li>
-                            <li>Rio de Janeiro - RJ</li>
-                        </ul>
-                    </div>
-                    <div className="footer-info-icon-container">
-                        <img src={instagram} alt="instagram" />
-                        <img src={facebook} alt="facebook" />
-                        <img src={youtube} alt="youtube" />
-                    </div>
-                </div>
-                <div className="footer-link-container">
-                    <div className="footer-link-title">INFORMAÇÕES</div>
-                    <div className="footer-link-list">
-                        <Link className="footer-link-item" to="/bicicletas">Bicicletas</Link>
-                        <Link className="footer-link-item" to="/seguros">Seguros</Link>
-                        <Link className="footer-link-item" to="/contato">Contato</Link>
-                        <Link className="footer-link-item" to="/termos">Termos e Condições</Link>
-                    </div>
-                </div>
-                <div className="footer-description">Bikcraft © Alguns rireitos reservados.</div>
-
-            </div>
+            <Footer />
 
         </div >
 
