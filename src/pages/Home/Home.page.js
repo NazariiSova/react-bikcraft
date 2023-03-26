@@ -50,7 +50,7 @@ const HomePage = () => {
                 <div className="catalog-title">escohola a sua</div>
                 <div className="catalog-cards">
                     <div className="catalog-card-item">
-                        <img className="catalog-card-img" src={bicicleta2} alt="" />
+                        <img className="catalog-card-img" src={bicicleta2} alt="bicicleta2" />
                         <div className="catalog-card-description">Magic Migth</div>
                         <div className="catalog-card-price">R$ 2499</div>
                     </div>

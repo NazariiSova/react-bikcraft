@@ -4,7 +4,7 @@ import "./headlines.scss"
 
 
 
-const Nav = () => {
+const Header = () => {
     return (
         <header>
             <div className="container" >
@@ -29,4 +29,4 @@ const Nav = () => {
 
 };
 
-export default Nav;
+export default Header;

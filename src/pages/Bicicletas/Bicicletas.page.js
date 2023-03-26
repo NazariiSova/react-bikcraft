@@ -6,7 +6,7 @@ const BicicletasPage = () => {
     return (
         <div className="bicicletas-container">
             <div className="header-container">
-                <div className="header-smal-text">ESCOLHA A MELHORA PARA VOCÊ</div>
+                <div className="header-small-text">ESCOLHA A MELHORA PARA VOCÊ</div>
                 <div className="header-title">nossas bicicletas</div>
             </div>
             

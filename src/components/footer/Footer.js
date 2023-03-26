@@ -6,7 +6,7 @@ import facebook from './imgSocial/facebook.png'
 import youtube from "./imgSocial/youtube.png"
 
 
-const Footer = ({ children }) => {
+const Footer = () => {
     return (
         <div className="footer-container">
 
