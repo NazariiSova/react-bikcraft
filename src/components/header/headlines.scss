@@ -5,7 +5,7 @@ $white-color: #ffffff;
   margin-right: auto;
   margin-left: auto;
   height: 96px;
-  width: 1600px;
+  width: 100%;
   background-color: $black-color;
 }
 
@@ -21,8 +21,8 @@ $white-color: #ffffff;
     font-family: poppins;
     width: 700px;
 
-    height: 28.583999633789062px;
-    width: 133.54299926757812px;
+    height: 28px;
+    width: 133px;
     left: 0px;
     top: 2px;
     border-radius: 0px;
@@ -34,7 +34,7 @@ $white-color: #ffffff;
     bottom: 33.33%;
   }
 
-  &-others-container {
+  &-container {
     position: relative;
     left: 66.5%;
     right: 13.75%;
@@ -51,5 +51,6 @@ $white-color: #ffffff;
     line-height: 32px;
     letter-spacing: 0em;
     text-align: left;
+    width: 100px;
   }
 }

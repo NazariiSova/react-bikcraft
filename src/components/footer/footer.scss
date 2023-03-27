@@ -3,12 +3,16 @@
 
 
 .footer {
+  &-content{
+    display: flex;
+    
+  }
     &-container {
       height: 492px;
-      width: 1600px;
+      width: 100%;
       background-color: $black-color;
-      display: flex;
-      justify-content: space-between;
+      
+     
     }
     &-bikcraft {
       text-decoration: none;
@@ -31,6 +35,7 @@
       text-align: left;
       margin-top: 60px;
       margin-bottom: 32px;
+      margin-left: 300px;
       text-transform: uppercase;
     }
     &-info-ul {
@@ -38,6 +43,7 @@
         list-style-type: none;
         margin-left: -40px;
       }
+      margin-left: 300px;
       color: $light-gray-color;
       font-family: Roboto;
       font-size: 18px;
@@ -46,9 +52,15 @@
       letter-spacing: 0.015em;
       text-align: left;
     }
+    &-info-li{
+      list-style-type: none;
+      text-decoration: none;
+      color:inherit
+    }
     &-info-icon-container {
       display: flex;
       column-gap: 32px;
+      margin-left: 300px;
     }
   
     &-link {
@@ -64,12 +76,15 @@
         line-height: 32px;
         margin-top: 60px;
         margin-bottom: 32px;
+        margin-left: 400px;
         letter-spacing: 0.015em;
         text-transform: uppercase;
       }
       &-list {
         display: flex;
         flex-direction: column;
+        margin-left: 400px;
+        
       }
       &-item {
         font-family: Poppins;
@@ -78,7 +93,6 @@
         line-height: 36px;
         letter-spacing: 0.015em;
         text-align: left;
-  
         text-decoration: none;
         color: $light-gray-color;
         margin-top: 0;
@@ -92,5 +106,6 @@
       letter-spacing: 0.015em;
       text-align: left;
       color: $dark-gray-color;
+      margin: 0 0 50px 200px;
     }
   }
