@@ -1,7 +1,7 @@
 import React from "react";
 import "./homePage.scss";
 import imgIntro from "./imgHome/img-intro.png";
-import dec from "../../components/img/Icons/dec.svg"
+import dec from "../../components/img/dec.svg"
 import { Link } from "react-router-dom";
 import Footer from '../../components/footer/Footer';
 
@@ -33,7 +33,7 @@ const HomePage = () => {
     return (
         <div className="home-page-container">
 
-            <div div className="header-post" >
+            <div className="header-post" >
 
                 <img className="header-post-dec" src={dec} alt="dec" />
                 <div className="header-post-text">

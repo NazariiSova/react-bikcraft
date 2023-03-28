@@ -40,6 +40,7 @@
       margin-left: 40%;
       text-transform: uppercase;
       width: 450px;
+      color: $white-color;
     }
     &-info-ul {
       li {
@@ -82,6 +83,7 @@
         margin-left: 50%;
         letter-spacing: 0.015em;
         text-transform: uppercase;
+        color: $white-color;
       }
       &-list {
         display: flex;

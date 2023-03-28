@@ -1,0 +1,130 @@
+@import "../../components/styles/variables.scss";
+@import "../../components/styles/mixins.scss";
+
+.bike {
+  &-container {
+    &-dark {
+      background-color: $dark-color;
+      height: 460px;
+      width: 70%;
+      margin-top: 60px;
+      position: relative;
+      color: $white-color;
+    }
+    &-light {
+      background-color: $white-color;
+      height: 460px;
+      width: 70%;
+      margin-top: 60px;
+      position: relative;
+    }
+  }
+  &-img-container {
+    position: absolute;
+    top: 60px;
+    left: -10%;
+  }
+  &-img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+  }
+  &-price {
+    position: absolute;
+    left: 80%;
+    top: 10%;
+    height: 26px;
+    width: 80px;
+    border-radius: 5px;
+    padding: 8px 16px 8px 16px;
+    background-color: $dark-color;
+    color: $white-color;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+  }
+  &-title-and-dec {
+    margin-top: 76px;
+    display: flex;
+    justify-content: space-around;
+  }
+  &-title {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 20px;
+  }
+  &-dec {
+    transform: rotate(180deg);
+    opacity: 0.2;
+    height: 52px;
+    width: 52px;
+  }
+  &-description {
+    height: auto;
+    max-width: 460px;
+    width: 40%;
+    position: absolute;
+    left: 20%;
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+    color: $dark-gray-color;
+    margin-left: 20px;
+  }
+  &-footer-container {
+    display: flex;
+    height: auto;
+    max-width: 600px;
+    width: 40%;
+    justify-content: space-around;
+    position: absolute;
+    left: 20%;
+    top: 250px;
+    margin-left: 20px;
+  }
+  &-list {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    &-img {
+      margin-right: 8px;
+    }
+  }
+  &-btn {
+    height: 35px;
+    width: 160px;
+    border-radius: 5px;
+    padding: 16px 32px 16px 32px;
+    background-color: $orange-color;
+    color: $black-color;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+
+    margin-top: 80px;
+  }
+}

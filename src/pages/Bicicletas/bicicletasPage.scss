@@ -4,7 +4,7 @@
 .header {
   &-container {
     @include centering();
-    background-color:#121212;
+    background-color:$dark-color;
     ;
     height: 223px;
     width: 100%;
@@ -32,4 +32,11 @@
     }
 
   }
+}
+
+.bicicletas-catalog-container{
+display: flex;
+flex-direction: column;
+align-items: end;
+margin-top: 60px;
 }
