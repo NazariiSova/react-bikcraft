@@ -1,7 +1,7 @@
 import React from "react";
 import "./homePage.scss";
 import imgIntro from "./imgHome/img-intro.png";
-import dec from "./imgHome/dec.svg"
+import dec from "../../components/img/Icons/dec.svg"
 import { Link } from "react-router-dom";
 import Footer from '../../components/footer/Footer';
 
@@ -9,8 +9,8 @@ import bicicleta1 from "./imgHome/bicicleta1.png"
 import bicicleta2 from "./imgHome/bicicleta2.png"
 import bicicleta3 from "./imgHome/bicicleta3.png"
 
-import firstIcon from "./imgHome/first.png"
-import secondIcon from "./imgHome/second.png"
+import firstIcon from "../../components/img/Icons/bike.png"
+import secondIcon from "../../components/img/Icons/tracker.png"
 import diferencial from "./imgHome/diferencial.png"
 
 import ranek from "./imgHome/imgParceiros/ranek.png"
@@ -31,7 +31,7 @@ import quotationMarck from "./imgHome/quotationMarck.png"
 
 const HomePage = () => {
     return (
-        <div className="home-container">
+        <div className="home-page-container">
 
             <div div className="header-post" >
 

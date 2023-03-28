@@ -1,6 +1,6 @@
 @import "../../components/styles/variables.scss";
 @import "../../components/styles/mixins.scss";
-.home-container {
+.home-page-container {
   @include centering();
   display: flex;
   flex-direction: column;
@@ -113,17 +113,22 @@
   }
 }
 
-.catalog-title {
-  @include title-black();
-  color: $black-color;
+.catalog {
+  &-title {
+    @include title-black();
+    color: $black-color;
 
-  height: 72px;
-  margin-left: 205px;
-  margin-top: 114px;
-  border-radius: nullpx;
-  &:after {
-    content: ".";
-    color: $orange-color;
+    height: 72px;
+    margin-left: 205px;
+    margin-top: 114px;
+    border-radius: nullpx;
+    &:after {
+      content: ".";
+      color: $orange-color;
+    }
+  }
+  &-card-item{
+    margin-left: 50px;
   }
 }
 
@@ -219,7 +224,6 @@
       line-height: 36px;
       letter-spacing: 0em;
       text-align: left;
-    
     }
 
     &-footer-content {
@@ -260,7 +264,6 @@
 .partners-container {
   display: flex;
   flex-direction: column;
-
 }
 .partners-row {
   display: flex;

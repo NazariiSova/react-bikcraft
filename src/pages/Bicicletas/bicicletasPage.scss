@@ -4,11 +4,12 @@
 .header {
   &-container {
     @include centering();
-    background-color: $black-color;
+    background-color:#121212;
+    ;
     height: 223px;
     width: 100%;
   }
-  &-smal-text {
+  &-small-text {
     font-family: Poppins;
     font-size: 24px;
     font-weight: 500;
