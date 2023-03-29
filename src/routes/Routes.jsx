@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/header/Header";
 
-import { Route, Routes as ReactRouterRouter } from "react-router-dom";
+import { Route, Routes as RouterRoutes } from "react-router-dom";
 
 import HomePage from "../pages/Home/Home.page";
 import SegurosPage from "../pages/Seguros/Seguros.page";
@@ -17,14 +17,14 @@ const Routes = () => {
 
             <Header />
 
-            <ReactRouterRouter>
+           <RouterRoutes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/bicicletas" element={<BicicletasPage />} />
                 <Route path="/bicicleta-interna" element={<BicicletaInternaPage />} />
                 <Route path="/seguros" element={<SegurosPage />} />
                 <Route path="/contato" element={<ContatoPage />} />
                 <Route path="/termos" element={<TermosPage />} />
-            </ReactRouterRouter>
+            </RouterRoutes>
 
            
         </div>
