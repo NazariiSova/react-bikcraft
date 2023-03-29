@@ -1,0 +1,115 @@
+@import "../../components/styles/variables.scss";
+@import "../../components/styles/mixins.scss";
+
+
+.footer {
+  &-content{
+    display: flex;
+    
+  }
+    &-container {
+      height: 492px;
+      width: 100%;
+      background-color: $black-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+    }
+    &-bikcraft {
+      text-decoration: none;
+      color: $white-color;
+      font-family: Poppins;
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 72px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-top: 40px;
+     
+    }
+    &-info-title {
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 32px;
+      letter-spacing: 0.015em;
+      text-align: left;
+      margin-top: 60px;
+      margin-bottom: 32px;
+      margin-left: 40%;
+      text-transform: uppercase;
+      width: 450px;
+    }
+    &-info-ul {
+      li {
+        list-style-type: none;
+        margin-left: -40px;
+      }
+      margin-left: 40%;
+      color: $light-gray-color;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 32px;
+      letter-spacing: 0.015em;
+      text-align: left;
+    }
+    &-info-li{
+      list-style-type: none;
+      text-decoration: none;
+      color:inherit
+    }
+    &-info-icon-container {
+      display: flex;
+      column-gap: 32px;
+      margin-left: 40%;
+    }
+  
+    &-link {
+      &-container {
+        position: relative;
+        left: 100px;
+      }
+      &-title {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 60px;
+        margin-bottom: 32px;
+        margin-left: 50%;
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+      }
+      &-list {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50%;
+        
+      }
+      &-item {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0.015em;
+        text-align: left;
+        text-decoration: none;
+        color: $light-gray-color;
+        margin-top: 0;
+        width: 200px;
+      }
+    }
+    &-description {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0.015em;
+      text-align: left;
+      color: $dark-gray-color;
+      margin: 0 0 50px -30%;
+    }
+  }
