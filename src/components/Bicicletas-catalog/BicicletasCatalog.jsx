@@ -9,9 +9,9 @@ import tracker from "../img/Icons/tracker.png";
 import dec from "../img/dec.svg";
 
 export const BicicletasCatalog = ({ isDarkBackground, img, price, title }) => {
-  let Background = isDarkBackground ? "-dark" : "-light";
+  let Background = isDarkBackground ? "dark" : "light";
   return (
-    <div className={`bike-container${Background}`}>
+    <div className={`bike-container bike-container--${Background}`}>
       <div className="bike-img-container">
         <img className="bike-img" src={img} alt="bike" />
         <div className="bike-price">{price}</div>
@@ -21,8 +21,8 @@ export const BicicletasCatalog = ({ isDarkBackground, img, price, title }) => {
         <img src={dec} alt="dec" className="bike-dec" />
       </div>
       <div className="bike-description">
-        A Magic Migth é a melhor Bikcraft já criada pela nossa equipe. Ela vem
-        equipada com os melhores acessórios, o que garante maior velocidade.{" "}
+        {`A ${title}é a melhor Bikcraft já criada pela nossa equipe. Ela vem
+        equipada com os melhores acessórios, o que garante maior velocidade.`}
       </div>
       <div className="bike-footer-container">
         <div className="bike-list-container">
@@ -43,7 +43,7 @@ export const BicicletasCatalog = ({ isDarkBackground, img, price, title }) => {
             Rastreador
           </div>
         </div>
-        <div className="bike-btn">MAIS SOBRE →</div>
+        <div className="bike-btn"><Link className="header-post-button-link" to="/bicicleta-interna">MAIS SOBRE →</Link></div>
       </div>
     </div>
   );

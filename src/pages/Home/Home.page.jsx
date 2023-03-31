@@ -39,7 +39,7 @@ const HomePage = () => {
             Bicicletas elétricas de alta precisão e qualidade, feitas sob medida
             para o cliente. Explore o mundo na sua velocidade com a Bikcraft.
           </div>
-          <button className="header-post-button">Selecione a sua</button>
+          <button className="header-post-button" > <Link className="header-post-button-link"to="/bicicletas">Selecione a sua</Link></button>
         </div>
         <img src={imgIntro} alt="img-intro" />
       </div>
