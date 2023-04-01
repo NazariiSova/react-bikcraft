@@ -18,13 +18,13 @@
     text-align: left;
     color: $light-gray-color;
 
-    margin-left: 220px;
+    margin-left: 8%;
     padding-top: 60px;
   }
   &-title {
     @include title-white();
     color: $white-color;
-    margin:8px 0 0 220px;
+    margin:8px 0 0 8%;
 
     &::after {
       content: ".";
