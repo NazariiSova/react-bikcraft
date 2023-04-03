@@ -1,9 +1,10 @@
 import React from "react";
 import Footer from "../../components/footer/Footer";
 
+import { BicicletaInterna } from "../../components/Сhoice-of-bikes/ChoiceBikes";
+import { OtherBikes } from "../../components/Others-of-bikes/OthersBikes";
 
-
-import { BicicletaInterna } from "../../components/Сhoice-of-bikes/ChoiceBikes"
+import "./Bicicleta-internaPage.scss"
 
 // const dataBikeCatalog = [
 //   {
@@ -32,17 +33,16 @@ const BicicletaInternaPage = () => {
         {/* <div className="header-internal-small-text">{price}</div>
         <div className="header-internal-title">{title}</div> */}
       </div>
-      <div className="bicicletas-catalog-container">
-      
-          <BicicletaInterna
-            // key={item.title}
-            //  img={item.img}
+      <div className="bicicletas-choice-container">
+        <BicicletaInterna
+        // key={item.title}
+        //  img={item.img}
         //     title={item.title}
         //     price={item.price}
         //    isMain={item.isMain}
-            
-          />
-       
+        />
+        <div className="bicicleta-choice-title">ESCOLHA A SUA</div>
+        <OtherBikes />
       </div>
       <Footer />
     </div>

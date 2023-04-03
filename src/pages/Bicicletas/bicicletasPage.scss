@@ -4,8 +4,7 @@
 .header {
   &-container {
     @include centering();
-    background-color:$dark-color;
-    ;
+    background-color: $dark-color;
     height: 223px;
     width: 100%;
   }
@@ -14,7 +13,7 @@
     font-size: 24px;
     font-weight: 500;
     line-height: 23px;
- 
+
     text-align: left;
     color: $light-gray-color;
 
@@ -24,19 +23,19 @@
   &-title {
     @include title-white();
     color: $white-color;
-    margin:8px 0 0 8%;
+    margin: 8px 0 0 8%;
 
     &::after {
       content: ".";
       color: $orange-color;
     }
-
   }
 }
 
-.bicicletas-catalog-container{
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-margin-top: 60px;
+.bicicletas-catalog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 60px;
+  
 }
