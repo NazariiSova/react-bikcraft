@@ -21,7 +21,7 @@ export const BicicletasCatalog = ({ isDarkBackground, img, price, title }) => {
         <img src={dec} alt="dec" className="bike-dec" />
       </div>
       <div className="bike-description">
-        {`A ${title}é a melhor Bikcraft já criada pela nossa equipe. Ela vem
+        {`A ${title} é a melhor Bikcraft já criada pela nossa equipe. Ela vem
         equipada com os melhores acessórios, o que garante maior velocidade.`}
       </div>
       <div className="bike-footer-container">
