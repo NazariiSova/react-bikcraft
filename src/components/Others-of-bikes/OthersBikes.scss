@@ -4,8 +4,8 @@
 .others-bikes {
   &-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   &-subtitle {
     font-family: "Poppins";
@@ -27,5 +27,10 @@
     text-align: center;
 
     color: $light-gray-color;
+  }
+  &-img{
+    &:first-of-type{
+      margin-right: 75px;
+    }
   }
 }
