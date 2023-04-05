@@ -1,7 +1,7 @@
 import React from "react";
 import "./homePage.scss";
 import imgIntro from "./imgHome/img-intro.png";
-import dec from "../../components/img/Icons/dec.svg";
+import dec from "../../components/img/dec.svg"
 import { Link } from "react-router-dom";
 import Footer from "../../components/footer/Footer";
 import { SupportCard } from "../../components/support-card/SupportCard";
@@ -39,7 +39,7 @@ const HomePage = () => {
             Bicicletas elétricas de alta precisão e qualidade, feitas sob medida
             para o cliente. Explore o mundo na sua velocidade com a Bikcraft.
           </div>
-          <button className="header-post-button">Selecione a sua</button>
+          <button className="header-post-button" > <Link className="header-post-button-link"to="/bicicletas">Selecione a sua</Link></button>
         </div>
         <img src={imgIntro} alt="img-intro" />
       </div>
