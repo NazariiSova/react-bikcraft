@@ -71,6 +71,9 @@
 
       background-color: $orange-color;
     }
+    &-quantity {
+      margin-top: 16px;
+    }
     &-item {
       &-box {
         font-family: "Poppins";
@@ -180,6 +183,4 @@
     }
   }
 }
-#bike-choice-quantity {
-  margin-top: 16px;
-}
+

@@ -20,7 +20,7 @@ const bike2 = "Magic Migth";
 const bike3 = "Mebula Cosmic";
 
 export const BicicletaInterna = ({ img, title}) => {
-  let isMain = img ? "main" : "small";
+  const isMain = img ? "main" : "small";
   return (
     <div className="choice-container">
       <div className="bikes-photo-container">
@@ -53,7 +53,7 @@ export const BicicletaInterna = ({ img, title}) => {
               />
               entrega em 5 dias
             </div>
-            <div className="bike-choice-item-box" id="bike-choice-quantity">
+            <div className="bike-choice-item-box bike-choice-quantity">
               <img
                 className="bike-choice-item-img"
                 src={quantity}
