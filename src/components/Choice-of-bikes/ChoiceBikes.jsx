@@ -19,25 +19,25 @@ const bike1 = "Nimbus Stack";
 const bike2 = "Magic Migth";
 const bike3 = "Mebula Cosmic";
 
-export const BicicletaInterna = ({ img, title}) => {
-  const isMain = img ? "main" : "small";
+export const BicicletaInterna = ({mainBike, subAnimals, handlerChangeItem}) => {
+  const isMain = mainBike.name ? "main" : "small";
   return (
     <div className="choice-container">
       <div className="bikes-photo-container">
-        <img className="bikes-photo-main" src={bicicleta1} alt={bike1} />
+        <img className="bikes-photo-main" src={mainBike.name} alt={mainBike.title} />
         <div className="bikes-photos-small">
           <img
             className="bikes-photo-small-first"
-            src={bicicleta2}
-            alt={bike2}
+            src={mainBike.name}
+            alt={mainBike.title}
           />
-          <img className="bikes-photo-small" src={bicicleta3} alt={bike3} />
+          <img className="bikes-photo-small" src={mainBike.name} alt={mainBike.title} />
         </div>
         <img className="bikes-photo-dec" src={dec} alt="alt"/>
       </div>
       <div className="bike-details-container">
         <div className="bike-main-description">
-          A {title} é a melhor Bikcraft já criada pela nossa equipe. Ela vem
+          A {mainBike.title} é a melhor Bikcraft já criada pela nossa equipe. Ela vem
           equipada com os melhores acessórios, o que garante maior velocidade.
         </div>
         <div className="bike-btn-item-box">
