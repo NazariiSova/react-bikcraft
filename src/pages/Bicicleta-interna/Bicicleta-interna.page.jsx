@@ -2,8 +2,8 @@ import React from "react";
 import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
 
-import { BicicletaInterna } from "../../components/Сhoice-of-bikes/ChoiceBikes";
-import { OtherBikes } from "../../components/Others-of-bikes/OthersBikes";
+import { BicicletaInterna } from "../../components/СhoiceBikes/ChoiceBikes";
+import { OtherBikes } from "../../components/OthersBikes/OthersBikes";
 
 import "./Bicicleta-internaPage.scss";
 
@@ -18,19 +18,19 @@ import { useState } from "react";
 const dataBikeCatalog = [
   {
     isMain: true,
-    name: bicicleta1,
+    img: bicicleta1,
     price: "R$ 4.999",
     title: "Nimbus Stark",
   },
   {
     isMain: false,
-    name: bicicleta2,
+    img: bicicleta2,
     price: "R$ 2.999",
     title: "Magic Migth",
   },
   {
     isMain: false,
-    name: bicicleta3,
+    img: bicicleta3,
     price: "R$ 3.999",
     title: "Mebula Cosmic",
   },
@@ -39,7 +39,7 @@ const BicicletaInternaPage = () => {
   const [mainBike, setMainBike] = useState(dataBikeCatalog[0]);
   const [subBikes, setSubBikes] = useState(
     dataBikeCatalog.filter((bike) => {
-      return bike.name !== dataBikeCatalog[0].name;
+      return bike.img !== dataBikeCatalog[0].img;
     })
   );
 
@@ -58,7 +58,7 @@ const BicicletaInternaPage = () => {
     setMainBike(newMainBike);
     setSubBikes(
       dataBikeCatalog.filter((bike) => {
-        return bike.name !==newMainBike.name;
+        return bike.img !==newMainBike.img;
       })
     );
   };
@@ -73,11 +73,8 @@ const BicicletaInternaPage = () => {
       </div>
       <div className="bicicletas-choice-container">
         <BicicletaInterna
-          key={dataBikeCatalog.title}
-          img={dataBikeCatalog.name}
-          title={dataBikeCatalog.title}
-          price={dataBikeCatalog.price}
-          isMain={dataBikeCatalog.isMain}
+         mainBike={mainBike}
+         subBikes={subBikes}
           handlerChangeItem={handlerChangeItem}
         />
         <div className="bicicleta-choice-title">ESCOLHA A SUA</div>

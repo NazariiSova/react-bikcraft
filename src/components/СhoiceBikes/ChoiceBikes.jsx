@@ -19,19 +19,22 @@ const bike1 = "Nimbus Stack";
 const bike2 = "Magic Migth";
 const bike3 = "Mebula Cosmic";
 
-export const BicicletaInterna = ({mainBike, subAnimals, handlerChangeItem}) => {
-  const isMain = mainBike.name ? "main" : "small";
+export const BicicletaInterna = ({mainBike, subBikes, handlerChangeItem}) => {
+  console.log(mainBike)
+  console.log(subBikes);
+  const isMain = mainBike.img ? "main" : "small";
   return (
+    
     <div className="choice-container">
       <div className="bikes-photo-container">
-        <img className="bikes-photo-main" src={mainBike.name} alt={mainBike.title} />
+        <img className="bikes-photo-main" src={mainBike.img} alt={mainBike.title} />
         <div className="bikes-photos-small">
           <img
-            className="bikes-photo-small-first"
-            src={mainBike.name}
-            alt={mainBike.title}
+            className="bikes-photo-small"
+            src={subBikes[0].img}
+            alt={subBikes[0].title}
           />
-          <img className="bikes-photo-small" src={mainBike.name} alt={mainBike.title} />
+          <img className="bikes-photo-small" src={subBikes[1].img} alt={subBikes[1].title} />
         </div>
         <img className="bikes-photo-dec" src={dec} alt="alt"/>
       </div>
