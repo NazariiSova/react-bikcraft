@@ -2,34 +2,43 @@
 @import "../../components/styles/mixins.scss";
 
 .header {
-    &-container {
-      @include centering();
-      background-color:#121212;
-      ;
-      height: 223px;
-      width: 100%;
-    }
-    &-small-text {
-      font-family: Poppins;
-      font-size: 24px;
-      font-weight: 500;
-      line-height: 23px;
-   
-      text-align: left;
-      color: $light-gray-color;
-  
-      margin-left: 220px;
-      padding-top: 60px;
-    }
-    &-title {
-      @include title-white();
-      color: $white-color;
-      margin:8px 0 0 220px;
-  
-      &::after {
-        content: ".";
-        color: $orange-color;
-      }
-  
+  &-container {
+    @include centering();
+    background-color: $dark-color;
+    height: 223px;
+    width: 100%;
+  }
+  &-small-text {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 23px;
+
+    text-align: left;
+    color: $light-gray-color;
+
+    margin-left: 220px;
+    padding-top: 60px;
+  }
+  &-title {
+    @include title-white();
+    color: $white-color;
+    margin: 8px 0 0 220px;
+
+    &::after {
+      content: ".";
+      color: $orange-color;
     }
   }
+}
+.seguro {
+  &-container {
+    background-color: $dark-color;
+  }
+  &-support-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+  }
+}
