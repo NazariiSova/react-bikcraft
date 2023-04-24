@@ -6,37 +6,36 @@ import material from "../img/Icons/material.png";
 import speed from "../img/Icons/speed.png";
 import tracker from "../img/Icons/tracker.png";
 
-import bicicleta1 from "../../pages/Bicicleta-interna/imgBicicletas/bicicleta1.png";
-import bicicleta2 from "../../pages/Bicicleta-interna/imgBicicletas/bicicleta2.png";
-import bicicleta3 from "../../pages/Bicicleta-interna/imgBicicletas/bicicleta3.png";
 
 import delivery from "./img/delivery.png";
 import quantity from "./img/quantity.png";
 
 import dec from "../img/dec.svg";
 
-const bike1 = "Nimbus Stack";
-const bike2 = "Magic Migth";
-const bike3 = "Mebula Cosmic";
-
 export const BicicletaInterna = ({mainBike, subBikes, handlerChangeItem}) => {
   console.log(mainBike)
   console.log(subBikes);
-  const isMain = mainBike.img ? "main" : "small";
+ 
   return (
     
     <div className="choice-container">
       <div className="bikes-photo-container">
         <img className="bikes-photo-main" src={mainBike.img} alt={mainBike.title} />
         <div className="bikes-photos-small">
-          <img
+          {subBikes.map((subBike) =>(
+               <img
             className="bikes-photo-small"
-            src={subBikes[0].img}
-            alt={subBikes[0].title}
+            src={subBike.img}
+            alt={subBike.title}
+            title={subBike.title}
+            onClick={handlerChangeItem}
+            key={subBike.id}
           />
-          <img className="bikes-photo-small" src={subBikes[1].img} alt={subBikes[1].title} />
+          ))}
+       
+         
         </div>
-        <img className="bikes-photo-dec" src={dec} alt="alt"/>
+        <img className="bikes-photo-dec" src={dec} alt="dec"/>
       </div>
       <div className="bike-details-container">
         <div className="bike-main-description">

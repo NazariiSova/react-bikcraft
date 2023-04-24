@@ -23,7 +23,7 @@ height: 1050px;
   &-small {
     margin-top: 20px;
     max-width: 270px;
-    &-first {
+    &:first-child{
       margin-right: 20px;
     }
   }
