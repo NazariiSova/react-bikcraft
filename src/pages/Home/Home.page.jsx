@@ -28,8 +28,7 @@ import partners from "./imgHome/depoimento.png";
 
 import quotationMarck from "./imgHome/quotationMarck.png";
 
-const HomePage = ({id}) => {
-  console.log({id});
+const HomePage = () => {
   return (
     <div className="home-page-container">
       <div className="header-post">
@@ -55,7 +54,7 @@ const HomePage = ({id}) => {
         <div className="catalog-cards">
           <div className="catalog-card-item">
             <Link
-              to={`/bicicleta-interna?id=${id}`}
+              to={`/bicicleta-interna?id=2`}
               
             >
               <img
@@ -64,25 +63,37 @@ const HomePage = ({id}) => {
                 alt="bicicleta2"
                 style={{ cursor: "pointer" }}
               />
-            </Link>
+            </Link >
             <div className="catalog-card-description">Magic Migth</div>
             <div className="catalog-card-price">R$ 2499</div>
           </div>
           <div className="catalog-card-item">
-            <img
-              className="catalog-card-img"
-              src={bicicleta1}
-              alt="bicicleta1"
-            />
+          <Link
+              to={`/bicicleta-interna?id=1`}
+              
+            >
+              <img
+                className="catalog-card-img"
+                src={bicicleta1}
+                alt="bicicleta1"
+                style={{ cursor: "pointer" }}
+              />
+            </Link >
             <div className="catalog-card-description">Nimbus Stark</div>
             <div className="catalog-card-price">R$ 4909</div>
           </div>
           <div className="catalog-card-item">
-            <img
-              className="catalog-card-img"
-              src={bicicleta3}
-              alt="bicicleta3"
-            />
+          <Link
+              to={`/bicicleta-interna?id=3`}
+              
+            >
+              <img
+                className="catalog-card-img"
+                src={bicicleta3}
+                alt="bicicleta3"
+                style={{ cursor: "pointer" }}
+              />
+            </Link >
             <div className="catalog-card-description">Nebula Cosmic</div>
             <div className="catalog-card-price">R$ 3999 </div>
           </div>
@@ -103,7 +114,7 @@ const HomePage = ({id}) => {
           </div>
           <Link
             className="headlines diferencial-text-button"
-            to="/bicicleta-interna"
+            to={`/bicicleta-interna?id=2`}
           >
             ESCOLHA UM MODELO
           </Link>
