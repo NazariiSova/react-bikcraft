@@ -5,7 +5,8 @@
   &-box-colored {
     display: flex;
     justify-content: space-between;
-    background-color: #0063B2;
+    background-color: #F7F7F7;
+    border-radius: 5px;
    
   }
   &-box-transparent {
@@ -24,10 +25,11 @@
       line-height: 24px;
       letter-spacing: 0em;
       text-align: left;
+      margin-left: 200px ;
       
 
-      padding: 10px 0 10px 0;
-      margin: 10px 0 10px 0;
+      padding: 10px 0 10px 10px;
+      margin: 10px 0 10px 15px;
       &::before {
         content: "";
         display: inline-block;
@@ -46,16 +48,15 @@
       letter-spacing: 0em;
       text-align: left;
       color: $dark-gray-color;
+      margin: 10px 0 10px 25px;
     }
 
     &-img {
       height: 7px;
       width: 12px;
       cursor: pointer;
+      margin: 30px 10px 0px 0px;
     }
   }
 }
 
-.sss{
-  background-color: red;
-}

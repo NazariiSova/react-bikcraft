@@ -6,7 +6,7 @@ import dropdown from "../img/Icons/dropdown.png";
 export const DropDownFAQ = ({question, i }) => {
   const [dropdownAnswer, setDropdownAnswer] = useState(false);
   const handlerChangeDropdownAnswer = () => setDropdownAnswer(!dropdownAnswer);
-  const bgColor = i % 2 === 0 ? "dropdown-box-transparent" : "dropdown-box-colored";
+  const bgColor = i % 2 !== 0 ? "dropdown-box-transparent" : "dropdown-box-colored";
   return (
     <div
       className={bgColor}
