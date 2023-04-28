@@ -5,6 +5,8 @@
   &-box-colored {
     display: flex;
     justify-content: space-between;
+    background-color: #0063B2;
+   
   }
   &-box-transparent {
     display: flex;
@@ -52,4 +54,8 @@
       cursor: pointer;
     }
   }
+}
+
+.sss{
+  background-color: red;
 }

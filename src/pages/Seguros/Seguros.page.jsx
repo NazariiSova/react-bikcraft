@@ -11,7 +11,18 @@ import speed from "../../components/img/Icons/speed.png";
 import traker from "../../components/img/Icons/tracker.png";
 import { DropDownFAQ } from "../../components/dropDownFAQ/DropDownFAQ";
 
+
 const SegurosPage = () => {
+  const dropdownQuestionArr = [
+    "qual forma de pagamento vocês aceitam?",
+    "Como posso entrar em contato?",
+    "Vocês possuem algum desconto?",
+    "Qual garantia que possuo? ",
+    "Posso parcelar no boleto?",
+    "Quantas trocas posso fazer ao ano? ",
+    "Qual BikCraft devo escolher para o meu tamanho? ",
+  ];
+  
   return (
     <div className="bicicletas-page-container">
       <div className="header-container">
@@ -130,16 +141,11 @@ const SegurosPage = () => {
           <div className="seguro-FAQ-container">
             <div className="seguro-FAQ-box">
               <div className="seguro-FAQ-title">perguntas frequentes</div>
-              <div className="seguro-FAQ-dropdown">
-                <DropDownFAQ
-                  question={"qual forma de pagamento vocês aceitam?"}
-                />
-                <DropDownFAQ question={"Como posso entrar em contato?"} />
-                <DropDownFAQ question={"Vocês possuem algum desconto?"} />
-                <DropDownFAQ question={"Qual garantia que possuo? "} />
-                <DropDownFAQ question={"Posso parcelar no boleto?"} />
-                <DropDownFAQ question={"Quantas trocas posso fazer ao ano? "} />
-                <DropDownFAQ question={"Qual BikCraft devo escolher para o meu tamanho? "} />
+              <div className="seguro-FAQ-dropdown ">
+                {dropdownQuestionArr.map((question, i) => (
+                  <DropDownFAQ question={question} key={i} i={i}/>
+                 
+                ))}
               </div>
             </div>
           </div>
