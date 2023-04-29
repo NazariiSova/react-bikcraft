@@ -5,10 +5,7 @@ import dec from "../../components/img/dec.svg";
 import { Link } from "react-router-dom";
 import Footer from "../../components/footer/Footer";
 import { SupportCard } from "../../components/support-card/SupportCard";
-
-import bicicleta1 from "./imgHome/bicicleta1.png";
-import bicicleta2 from "./imgHome/bicicleta2.png";
-import bicicleta3 from "./imgHome/bicicleta3.png";
+import { HomeBikeCatalog } from "../../components/HomeBikeCatalog/HomeBikeCatalog"
 
 import firstIcon from "../../components/img/Icons/bike.png";
 import secondIcon from "../../components/img/Icons/tracker.png";
@@ -52,51 +49,9 @@ const HomePage = () => {
       <div className="catalog-container">
         <div className="catalog-title">escohola a sua</div>
         <div className="catalog-cards">
-          <div className="catalog-card-item">
-            <Link
-              to={`/bicicleta-interna?id=2`}
-              
-            >
-              <img
-                className="catalog-card-img"
-                src={bicicleta2}
-                alt="bicicleta2"
-                style={{ cursor: "pointer" }}
-              />
-            </Link >
-            <div className="catalog-card-description">Magic Migth</div>
-            <div className="catalog-card-price">R$ 2499</div>
-          </div>
-          <div className="catalog-card-item">
-          <Link
-              to={`/bicicleta-interna?id=1`}
-              
-            >
-              <img
-                className="catalog-card-img"
-                src={bicicleta1}
-                alt="bicicleta1"
-                style={{ cursor: "pointer" }}
-              />
-            </Link >
-            <div className="catalog-card-description">Nimbus Stark</div>
-            <div className="catalog-card-price">R$ 4909</div>
-          </div>
-          <div className="catalog-card-item">
-          <Link
-              to={`/bicicleta-interna?id=3`}
-              
-            >
-              <img
-                className="catalog-card-img"
-                src={bicicleta3}
-                alt="bicicleta3"
-                style={{ cursor: "pointer" }}
-              />
-            </Link >
-            <div className="catalog-card-description">Nebula Cosmic</div>
-            <div className="catalog-card-price">R$ 3999 </div>
-          </div>
+          <HomeBikeCatalog/>
+       
+         
         </div>
       </div>
       <div className="diferencial-container">

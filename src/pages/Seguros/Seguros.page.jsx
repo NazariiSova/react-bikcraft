@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+
 import "./segurosPage.scss";
 import Footer from "../../components/footer/Footer";
 import { SupportCard } from "../../components/support-card/SupportCard";
+import { dataAdvantages } from "../../components/arrayAdvantages/arrayAdvantages"
 
 import bike from "../../components/img/Icons/bike.png";
 import leaf from "../../components/img/Icons/leaf.png";
@@ -60,82 +61,23 @@ const SegurosPage = () => {
           <div className="seguro-advantages-title">nossas vantagens</div>
           <div className="seguro-advantages-margins-container">
             <div className="seguro-advantages-items-container">
+            {dataAdvantages.map((item)=> (
               <div className="seguro-advantages-item-box">
                 <img
                   className="seguro-advantages-item-img"
-                  src={bike}
-                  alt="bike"
+                  src={item.img}
+                  alt={item.alt}
                 />
                 <div className="seguro-advantages-item-title">
-                  Reparo Elétrico
+                 {item.title}
                 </div>
                 <div className="seguro-advantages-item-description">
-                  Garantimos o reparo competo do seu motor em caso de falhas.
-                  Sabemos que falhas são raras, mas estamos aqui caso ocorra.
+                 {item.description}
                 </div>
               </div>
-              <div className="seguro-advantages-item-box">
-                <img
-                  className="seguro-advantages-item-img"
-                  src={material}
-                  alt="material"
-                />
-                <div className="seguro-advantages-item-title">
-                  Reparo de Quadro
-                </div>
-                <div className="seguro-advantages-item-description">
-                  Nossos quadros são feitos para durar para sempre. Mas caso
-                  algo ocorra, ficamos felizes em reparar.
-                </div>
-              </div>
-              <div className="seguro-advantages-item-box">
-                <img
-                  className="seguro-advantages-item-img"
-                  src={leaf}
-                  alt="support"
-                />
-                <div className="seguro-advantages-item-title">Sustentável</div>
-                <div className="seguro-advantages-item-description">
-                  Trabalhamos com a filosofia de desperdício zero. Qualquer
-                  parte defeituosa é reciclada e reutilizada em outro projeto.
-                </div>
-              </div>
-              <div className="seguro-advantages-item-box">
-                <img
-                  className="seguro-advantages-item-img"
-                  src={traker}
-                  alt="tracker"
-                />
-                <div className="seguro-advantages-item-title">Recuperação</div>
-                <div className="seguro-advantages-item-description">
-                  Recuperamos Bikcrafts roubadas sem custo adicional para o
-                  dono. Se não conseguirmos recuperar, damos uma nova para você.
-                </div>
-              </div>
-              <div className="seguro-advantages-item-box">
-                <img
-                  className="seguro-advantages-item-img"
-                  src={lock}
-                  alt="Safety"
-                />
-                <div className="seguro-advantages-item-title">Segurança</div>
-                <div className="seguro-advantages-item-description">
-                  O nosso seguro garante que todo reparo seja feito com peças
-                  genuínas e de alta qualidade. Confie na Bikcraft.
-                </div>
-              </div>
-              <div className="seguro-advantages-item-box">
-                <img
-                  className="seguro-advantages-item-img"
-                  src={speed}
-                  alt="speed"
-                />
-                <div className="seguro-advantages-item-title">Rapidez</div>
-                <div className="seguro-advantages-item-description">
-                  A sua Bikcraft ficará pronta para uso no mesmo dia, caso você
-                  traga ela para ser reparada em uma das filiais.
-                </div>
-              </div>
+            ))}
+              
+            
             </div>
           </div>
           <div className="seguro-FAQ-container">
@@ -144,7 +86,6 @@ const SegurosPage = () => {
               <div className="seguro-FAQ-dropdown ">
                 {dropdownQuestionArr.map((question, i) => (
                   <DropDownFAQ question={question} key={i} i={i}/>
-                 
                 ))}
               </div>
             </div>

@@ -27,7 +27,7 @@ const BicicletaInternaPage = () => {
   );
 
   const handlerChangeItem = (event) => {
-    console.log(event);
+    
     const newBikeName = event.target.title;
 
     const newMainBike = dataBikeCatalog.find((bike) => {
