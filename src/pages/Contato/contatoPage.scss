@@ -25,4 +25,126 @@
       }
     }
   }
+  &-shops {
+    background-color: black;
+    width: 30%;
+
+    &-title {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      color: white;
+      margin-top: 60px;
+      margin-left: 15%;
+    }
+    &-login {
+      &-container {
+        position: absolute;
+        top: 350px;
+        height: 576px;
+        width: 80%;
+        border-radius: 5px;
+        justify-content: center;
+        display: flex;
+      }
+    }
+    &-location {
+      margin-top: 40px;
+      margin-left: 15%;
+      color: white;
+      display: flex;
+
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      &-img {
+        height: 15px;
+        margin-top: 25px;
+      }
+      &-list {
+        list-style-type: none;
+        margin-left: -30px;
+      }
+    }
+    &-mail {
+      margin-left: 15%;
+      display: flex;
+      color: white;
+
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      &-img {
+        height: 15px;
+        margin-top: 25px;
+      }
+      &-list {
+        list-style-type: none;
+        margin-left: -30px;
+      }
+    }
+    &-phone {
+      margin-top: 32px;
+      margin-left: 15%;
+      display: flex;
+      color: white;
+
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      &-img {
+        height: 19px;
+        margin-right: 10px;
+      }
+    }
+    &-social {
+      display: flex;
+      margin-left: 17%;
+      width: 180px;
+      justify-content: space-between;
+      margin-top: 60px;
+    }
+    &-dec {
+      margin-top: 60px;
+      height: 40px;
+      margin-left: 30px;
+    }
+  }
+  &-login {
+    height: 576px;
+    width: 50%;
+    background-color: white;
+    &-first-inputs {
+      margin-top: 60px;
+      margin-left: 10%;
+      display: flex;
+    }
+    &-name-title {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $dark-color;
+    }
+    &-name-input{
+      height: 48px;
+      width: 200%;
+    }
+  }
 }
