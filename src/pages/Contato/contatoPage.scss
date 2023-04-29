@@ -1,2 +1,28 @@
 @import "../../components/styles/variables.scss";
 @import "../../components/styles/mixins.scss";
+
+.contacts {
+  &-header {
+    height: 600px;
+    padding-left: 12%;
+
+    background-color: $dark-color;
+    &-title {
+      @include title-white;
+      color: white;
+      margin-top: 8px;
+
+      &-small {
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        color: white;
+        padding-top: 60px;
+      }
+    }
+  }
+}
