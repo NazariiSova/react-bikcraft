@@ -56,7 +56,7 @@
     line-height: 40px;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 30%;
   }
   &-dec {
     transform: rotate(180deg);
@@ -69,7 +69,7 @@
     max-width: 460px;
     width: 40%;
     position: absolute;
-    left: 20%;
+    left: 40%;
 
     font-family: Roboto;
     font-size: 18px;
@@ -89,7 +89,8 @@
     position: absolute;
     left: 20%;
     top: 250px;
-    margin-left: 20px;
+    margin-left: 20%;
+    
   }
   &-list {
     font-family: Poppins;
@@ -104,6 +105,9 @@
     align-items: center;
     &-img {
       margin-right: 8px;
+    }
+    &-container{
+      margin-right: 10%;
     }
   }
   &-btn {

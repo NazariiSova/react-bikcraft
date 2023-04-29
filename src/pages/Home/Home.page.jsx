@@ -1,7 +1,7 @@
 import React from "react";
 import "./homePage.scss";
 import imgIntro from "./imgHome/img-intro.png";
-import dec from "../../components/img/dec.svg"
+import dec from "../../components/img/dec.svg";
 import { Link } from "react-router-dom";
 import Footer from "../../components/footer/Footer";
 import { SupportCard } from "../../components/support-card/SupportCard";
@@ -39,7 +39,12 @@ const HomePage = () => {
             Bicicletas elétricas de alta precisão e qualidade, feitas sob medida
             para o cliente. Explore o mundo na sua velocidade com a Bikcraft.
           </div>
-          <button className="header-post-button" > <Link className="header-post-button-link"to="/bicicletas">Selecione a sua</Link></button>
+          <Link
+            className="header-post-button header-post-button-link"
+            to="/bicicletas"
+          >
+            Selecione a sua
+          </Link>
         </div>
         <img src={imgIntro} alt="img-intro" />
       </div>
@@ -48,21 +53,47 @@ const HomePage = () => {
         <div className="catalog-title">escohola a sua</div>
         <div className="catalog-cards">
           <div className="catalog-card-item">
-            <img
-              className="catalog-card-img"
-              src={bicicleta2}
-              alt="bicicleta2"
-            />
+            <Link
+              to={`/bicicleta-interna?id=2`}
+              
+            >
+              <img
+                className="catalog-card-img"
+                src={bicicleta2}
+                alt="bicicleta2"
+                style={{ cursor: "pointer" }}
+              />
+            </Link >
             <div className="catalog-card-description">Magic Migth</div>
             <div className="catalog-card-price">R$ 2499</div>
           </div>
           <div className="catalog-card-item">
-            <img className="catalog-card-img" src={bicicleta1} alt="bicicleta1" />
+          <Link
+              to={`/bicicleta-interna?id=1`}
+              
+            >
+              <img
+                className="catalog-card-img"
+                src={bicicleta1}
+                alt="bicicleta1"
+                style={{ cursor: "pointer" }}
+              />
+            </Link >
             <div className="catalog-card-description">Nimbus Stark</div>
             <div className="catalog-card-price">R$ 4909</div>
           </div>
           <div className="catalog-card-item">
-            <img className="catalog-card-img" src={bicicleta3} alt="bicicleta3" />
+          <Link
+              to={`/bicicleta-interna?id=3`}
+              
+            >
+              <img
+                className="catalog-card-img"
+                src={bicicleta3}
+                alt="bicicleta3"
+                style={{ cursor: "pointer" }}
+              />
+            </Link >
             <div className="catalog-card-description">Nebula Cosmic</div>
             <div className="catalog-card-price">R$ 3999 </div>
           </div>
@@ -83,7 +114,7 @@ const HomePage = () => {
           </div>
           <Link
             className="headlines diferencial-text-button"
-            to="/bicicleta-interna"
+            to={`/bicicleta-interna?id=2`}
           >
             ESCOLHA UM MODELO
           </Link>

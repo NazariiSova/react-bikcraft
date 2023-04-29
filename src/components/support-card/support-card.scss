@@ -2,12 +2,13 @@
 @import "../../components/styles/mixins.scss";
 
 .support {
+
   &-silver {
     &-container {
       display: flex;
       height: 396px;
       width: 561px;
-      margin-top: 104px;
+
       margin-left: 216px;
       background-color: $black-color;
     }
@@ -30,6 +31,7 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 24px;
+      color: white;
       li {
         position: relative;
         padding-left: 20px;
@@ -91,7 +93,6 @@
   &-gold-container {
     height: 484px;
     width: 561px;
-    margin-top: 60px;
     margin-left: 41px;
     background-color: $black-color;
   }
@@ -157,6 +158,8 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 24px;
+      color: white;
+
       li {
         position: relative;
         padding-left: 20px;

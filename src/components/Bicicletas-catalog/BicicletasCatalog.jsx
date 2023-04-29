@@ -8,7 +8,7 @@ import tracker from "../img/Icons/tracker.png";
 
 import dec from "../img/dec.svg";
 
-export const BicicletasCatalog = ({ isDarkBackground, img, price, title }) => {
+export const BicicletasCatalog = ({ isDarkBackground, img, price, title, id,}) => {
   let Background = isDarkBackground ? "dark" : "light";
   return (
     <div className={`bike-container bike-container--${Background}`}>
@@ -21,7 +21,7 @@ export const BicicletasCatalog = ({ isDarkBackground, img, price, title }) => {
         <img src={dec} alt="dec" className="bike-dec" />
       </div>
       <div className="bike-description">
-        {`A ${title}é a melhor Bikcraft já criada pela nossa equipe. Ela vem
+        {`A ${title} é a melhor Bikcraft já criada pela nossa equipe. Ela vem
         equipada com os melhores acessórios, o que garante maior velocidade.`}
       </div>
       <div className="bike-footer-container">
@@ -43,7 +43,7 @@ export const BicicletasCatalog = ({ isDarkBackground, img, price, title }) => {
             Rastreador
           </div>
         </div>
-        <div className="bike-btn"><Link className="header-post-button-link" to="/bicicleta-interna">MAIS SOBRE →</Link></div>
+        <div className="bike-btn"><Link className="header-post-button-link" to={`/bicicleta-interna?id=${id}`}>MAIS SOBRE →</Link></div>
       </div>
     </div>
   );

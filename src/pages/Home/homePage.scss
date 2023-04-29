@@ -52,6 +52,7 @@
   }
 
   &-button {
+    width: 200px;
     @include button();
     margin-top: 36px;
     &-link{
@@ -421,6 +422,9 @@
     display: flex;
     justify-content: center;
     margin-right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &-dec {
     transform: rotate(90deg) scaleX(-1);
