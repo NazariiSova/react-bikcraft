@@ -13,8 +13,6 @@ import quantity from "./img/quantity.png";
 import dec from "../img/dec.svg";
 
 export const BicicletaInterna = ({mainBike, subBikes, handlerChangeItem}) => {
-  console.log(mainBike)
-  console.log(subBikes);
  
   return (
     

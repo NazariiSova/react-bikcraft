@@ -4,7 +4,7 @@ import "./OthersBikes.scss";
 
 
 export const OtherBikes = ({ subBikes, handlerChangeItem }) => { 
-  console.log(subBikes);
+  
   return (
     <div className="others-bikes-container">
       {subBikes.map((subBike) => (

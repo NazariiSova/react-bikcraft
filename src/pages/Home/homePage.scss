@@ -62,59 +62,14 @@
 }
 
 .catalog-container {
-  height: 734px;
   width: 1460px;
 }
 
 .catalog-cards {
-  margin-left: 70px;
+  
   margin-right: -70px;
   display: flex;
   justify-content: space-between;
-}
-
-.catalog-card {
-  &-img {
-    margin-top: 40px;
-    height: 520px;
-    width: 460px;
-    border-radius: 5px;
-  }
-
-  &-description {
-    color: $black-color;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 40px;
-
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-
-    &::before {
-      content: "";
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      margin-right: 5px;
-      vertical-align: middle;
-      background-color: $orange-color;
-    }
-  }
-
-  &-price {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: $dark-gray-color;
-    margin-left: 15px;
-    margin-top: 5px;
-  }
 }
 
 .catalog {
@@ -130,9 +85,6 @@
       content: ".";
       color: $orange-color;
     }
-  }
-  &-card-item {
-    margin-left: 50px;
   }
 }
 

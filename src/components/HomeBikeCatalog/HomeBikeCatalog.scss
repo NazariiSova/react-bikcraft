@@ -1,0 +1,53 @@
+@import "../../components/styles/variables.scss";
+@import "../../components/styles/mixins.scss";
+
+.home-bike-catalog-container{
+    display: flex;
+}
+.catalog-card {
+    &-item {
+        margin-left: 50px;
+      }
+
+    &-img {
+      margin-top: 40px;
+      
+      width: 460px;
+      border-radius: 5px;
+    }
+  
+    &-description {
+      color: $black-color;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 40px;
+  
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+  
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-right: 5px;
+        vertical-align: middle;
+        background-color: $orange-color;
+      }
+    }
+  
+    &-price {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: $dark-gray-color;
+      margin-left: 15px;
+      margin-top: 5px;
+    }
+  }
