@@ -1,0 +1,105 @@
+@import "../../components/styles/variables.scss";
+@import "../../components/styles/mixins.scss";
+
+.contacts {
+  &-card {
+    &-box {
+      display: block;
+      background-color: white;
+      width: 560px;
+      margin-right: 20%;
+      height: 600px;
+    }
+    &-title {
+      font-family: Poppins;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 40px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      margin-left: 50px;
+      margin-top: 40px;
+    }
+
+    &-list {
+      &-box {
+        display: flex;
+
+        justify-content: space-between;
+        margin: 30px 90px 0px 30px;
+      }
+      &-location {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $dark-gray-color;
+        list-style-type: none;
+
+        & > li {
+          position: relative;
+          padding-left: 10px;
+          margin-top: 20px;
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 2px;
+            height: 52px;
+            background-color: #ededed;
+          }
+        }
+      }
+      &-contacts {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $dark-gray-color;
+        list-style-type: none;
+
+        & > li {
+          position: relative;
+          padding-left: 10px;
+          margin-top: 20px;
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 2px;
+            height: 52px;
+            background-color: #ededed;
+          }
+        }
+      }
+    }
+    &-time {
+      &-box {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-left: 65px;
+        margin-top: 30px;
+      }
+      &-img {
+        position: relative;
+        top: 2px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

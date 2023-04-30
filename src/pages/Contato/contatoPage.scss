@@ -2,6 +2,9 @@
 @import "../../components/styles/mixins.scss";
 
 .contacts {
+  &-container {
+    background-color: #f5f5f5;
+  }
   &-header {
     height: 600px;
     padding-left: 12%;
@@ -45,11 +48,14 @@
       &-container {
         position: absolute;
         top: 350px;
+        left: 10%;
         height: 576px;
         width: 80%;
         border-radius: 5px;
         justify-content: center;
         display: flex;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
       }
     }
     &-location {
@@ -126,25 +132,149 @@
   }
   &-login {
     height: 576px;
-    width: 50%;
+    width: 80%;
     background-color: white;
     &-first-inputs {
       margin-top: 60px;
       margin-left: 10%;
       display: flex;
+
+      width: 100%;
+      justify-content: space-between;
     }
-    &-name-title {
+    &-name {
+      &-box {
+        flex-grow: 1;
+      }
+      &-title {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $dark-color;
+      }
+      &-input {
+        height: 40px;
+        min-width: 100px;
+        max-width: 600px;
+        background-color: #ededed;
+        border-radius: 5px;
+      }
+    }
+    &-phone {
+      &-title {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $dark-color;
+      }
+      &-input {
+        height: 40px;
+        min-width: 100px;
+        max-width: 600px;
+        background-color: #ededed;
+        border-radius: 5px;
+      }
+      &-box {
+        flex-grow: 1;
+      }
+    }
+    &-email {
+      &-box {
+        margin-left: 10%;
+        margin-top: 20px;
+      }
+      &-input {
+        width: 80%;
+        height: 40px;
+        background-color: #ededed;
+        border-radius: 5px;
+      }
+      &-title {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $dark-color;
+      }
+    }
+    &-message {
+      &-box {
+        margin-left: 10%;
+        margin-top: 20px;
+      }
+      &-input {
+        width: 80%;
+        height: 160px;
+        background-color: #ededed;
+        border-radius: 5px;
+      }
+      &-title {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $dark-color;
+      }
+    }
+    &-submit-button {
+      margin-left: 10%;
+      margin-top: 20px;
+      height: 56px;
+      width: 236px;
+      left: 740px;
+      top: 799px;
+      border-radius: 5px;
+      padding: 16px 32px 16px 32px;
+      background: linear-gradient(180deg, #ffbb00 0%, #f2a60c 100%);
       font-family: Poppins;
-      font-size: 16px;
-      font-weight: 500;
+      font-size: 18px;
+      font-weight: 400;
       line-height: 24px;
       letter-spacing: 0em;
       text-align: left;
-      color: $dark-color;
     }
-    &-name-input{
-      height: 48px;
-      width: 200%;
+    &-dec {
+      height: 40px;
+      transform: rotate(270deg);
+      position: absolute;
+      top: 520px;
+      left: 95%;
     }
+  }
+  &-card {
+    &-container {
+      margin-top: 380px;
+      display: block;
+      height: 100%;
+      justify-content: center;
+      margin-left: 20%;
+    }
+    &-main-title {
+      @include title-black;
+      &::after {
+        content: ".";
+        color: $orange-color;
+      }
+    }
+  }
+  &-cards {
+    &-container {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+      margin-bottom: 50px;
+    }
+    
   }
 }
