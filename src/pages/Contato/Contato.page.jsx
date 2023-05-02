@@ -16,56 +16,22 @@ import sp from "../../components/img/sp.png";
 import Footer from "../../components/footer/Footer";
 
 export const ContatoPage = () => {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [isFormValid, setIsFormValid] = useState(false);
+  const [isName, setIsName] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(true);
 
-  function handleNameChange(event) {
-    console.log(event.target.value);
-    setName(event.target.value);
-  }
+  const handlerChange = (event) => {
+    const value = event.target.value;
 
-  function handlePhoneChange(event) {
-    console.log(event.target.value);
-    setPhone(event.target.value);
-  }
-
-  function handleEmailChange(event) {
-    console.log(event.target.value);
-    setEmail(event.target.value);
-  }
-
-  function handleMessageChange(event) {
-    console.log(event.target.value);
-    setMessage(event.target.value);
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault();
-
-    const nameRegex = /^[\p{L}\s]*$/u;
-    const phoneRegex = /^\(\d{2}\)\s\d{4,5}-\d{4}$/;
-    const emailRegex = /^[\w.-]+@([\w-]+\.)+[\w-]{2,4}$/;
-    const messageRegex = /^.{10,}$/;
-
-    const isNameValid = nameRegex.test(name);
-    const isPhoneValid = phoneRegex.test(phone);
-    const isEmailValid = emailRegex.test(email);
-    const isMessageValid = messageRegex.test(message);
-
-    setIsFormValid(
-      isNameValid && isPhoneValid && isEmailValid && isMessageValid
-    );
-
-    if (isNameValid && isPhoneValid && isEmailValid && isMessageValid) {
-      console.log("Name: ", name);
-      console.log("Phone: ", phone);
-      console.log("Email: ", email);
-      console.log("Message: ", message);
+    if (value.length > 0) {
+      setIsName(true);
+      console.log(value);
+    } else {
+      setIsName(false);
     }
-  }
+
+    setIsDisabled(value.length === 0);
+  };
+
   return (
     <div className="contacts-container">
       <div className="contacts-header">
@@ -84,14 +50,22 @@ export const ContatoPage = () => {
             </ul>
           </div>
           <div className="contacts-shops-mail">
-            <img className="contacts-shops-mail-img" src={messageImg} alt="mail" />
+            <img
+              className="contacts-shops-mail-img"
+              src={messageImg}
+              alt="mail"
+            />
             <ul className="contacts-shops-mail-list">
               <li>vendas@bikcraft.com</li>
               <li>assistencia@bikcraft.com</li>
             </ul>
           </div>
           <div className="contacts-shops-phone">
-            <img className="contacts-shops-phone-img" src={phoneImg} alt="phone" />
+            <img
+              className="contacts-shops-phone-img"
+              src={phoneImg}
+              alt="phone"
+            />
             +55 22 99999-9999
           </div>
           <div className="contacts-shops-social">
@@ -102,15 +76,14 @@ export const ContatoPage = () => {
           <img className="contacts-shops-dec" src={dec} alt="dec" />
         </div>
 
-        <form className="contacts-login" onSubmit={handleSubmit}>
+        <form className="contacts-login">
           <div className="contacts-login-first-inputs">
             <div className="contacts-login-name-box">
               <div className="contacts-login-name-title">Nome</div>
               <input
                 className="contacts-login-name-input"
                 placeholder="Seu nome"
-                value={name}
-                onChange={handleNameChange}
+                onChange={handlerChange}
               />
             </div>
             <div className="contacts-login-phone-box">
@@ -118,8 +91,10 @@ export const ContatoPage = () => {
               <input
                 className="contacts-login-phone-input"
                 placeholder="(22) 99999-9999"
-                value={phone}
-                onChange={handlePhoneChange}
+                type="tel"
+                name="phone"
+                required
+                onChange={handlerChange}
               />
             </div>
           </div>
@@ -127,9 +102,11 @@ export const ContatoPage = () => {
             <div className="contacts-login-email-title">Email</div>
             <input
               className="contacts-login-email-input"
+              type="email"
+              name="email"
+              required
               placeholder="Seu email"
-              value={email}
-              onChange={handleEmailChange}
+              onChange={handlerChange}
             />
           </div>
           <div className="contacts-login-message-box">
@@ -137,14 +114,13 @@ export const ContatoPage = () => {
             <textarea
               className="contacts-login-message-input"
               placeholder="Digite sua mensagem"
-              value={message}
-              onChange={handleMessageChange}
             />
           </div>
           <button
             className="contacts-login-submit-button"
             type="submit"
-            disabled={!isFormValid}
+            disabled={isDisabled}
+            
           >
             Enviar Mensagem
           </button>

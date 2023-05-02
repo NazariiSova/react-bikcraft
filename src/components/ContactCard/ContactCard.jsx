@@ -1,6 +1,5 @@
 import timeImg from "../../components/img/Icons/time.png";
-
-import "./ContactCard.scss"
+import "./ContactCard.scss";
 
 export const ContactCard = ({img, alt, title, listLocation, listContacts, time}) => {
   return (
@@ -9,17 +8,14 @@ export const ContactCard = ({img, alt, title, listLocation, listContacts, time})
       <div className="contacts-card-title">{title}</div>
       <div className="contacts-card-list-box">
         <ul className="contacts-card-list-location">
-        {listLocation.map((item) => (
-              <li>{item}</li>
-            ))}
-          
-          
+          {listLocation.map((item, index) => (
+            <li key={`location-${index}`}>{item}</li>
+          ))}
         </ul>
         <ul className="contacts-card-list-contacts">
-        {listContacts.map((item) => (
-              <li>{item}</li>
-            ))}
-          
+          {listContacts.map((item, index) => (
+            <li key={`contact-${index}`}>{item}</li>
+          ))}
         </ul>
       </div>
       <div className="contacts-card-time-box">
