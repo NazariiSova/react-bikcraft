@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.20db4717.css",
+    "main.js": "/static/js/main.9119cd48.js",
+    "static/media/diferencial.png": "/static/media/diferencial.46c8ad8206476a8b3fc4.png",
+    "static/media/seguros.png": "/static/media/seguros.ec29eba273952cba06e5.png",
+    "static/media/depoimento.png": "/static/media/depoimento.df830a2e6e8c55388d9b.png",
+    "static/media/img-intro.png": "/static/media/img-intro.902139518c5f1675b160.png",
+    "static/media/bicicleta2.png": "/static/media/bicicleta2.30403fdb0a3b8bf61e9f.png",
+    "static/media/bicicleta3.png": "/static/media/bicicleta3.1b504ebe8ae7560a4445.png",
+    "static/media/bicicleta1.png": "/static/media/bicicleta1.5a7fbcf28b9a3b1ce8f1.png",
+    "static/media/sp.png": "/static/media/sp.c7955448e96db92da354.png",
+    "static/media/rio.png": "/static/media/rio.02e11f2ba7ca47a8d854.png",
+    "static/media/dec.svg": "/static/media/dec.8aa345be1f72f88d780a3fa1a36c3613.svg",
+    "index.html": "/index.html",
+    "main.20db4717.css.map": "/static/css/main.20db4717.css.map",
+    "main.9119cd48.js.map": "/static/js/main.9119cd48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20db4717.css",
+    "static/js/main.9119cd48.js"
+  ]
+}
