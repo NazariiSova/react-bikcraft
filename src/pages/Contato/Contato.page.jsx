@@ -5,7 +5,7 @@ import { ContactCard } from "../../components/ContactCard/ContactCard.jsx";
 
 import facebook from "../../components/img/Icons/facebook.png";
 import instagram from "../../components/img/Icons/instagram.png";
-import map from "../../components/img/Icons/map.png";
+import point from "../../components/img/Icons/point.png";
 import messageImg from "../../components/img/Icons/message.png";
 import phoneImg from "../../components/img/Icons/phone.png";
 import youtube from "../../components/img/Icons/youtube.png";
@@ -77,7 +77,11 @@ const handlerClick = () => {
         <div className="contacts-shops">
           <div className="contacts-shops-title">Loja Online</div>
           <div className="contacts-shops-location">
-            <img scr={map} alt="map" className="contacts-shops-img" />
+          <img
+              className="contacts-shops-location-img"
+              src={point}
+              alt="map"
+            />
             <ul className="contacts-shops-location-list">
               <li>Rua Ali Perto, 35 </li>
               <li>Rio de Janeiro - RJ</li>
