@@ -17,20 +17,55 @@ import Footer from "../../components/footer/Footer";
 
 export const ContatoPage = () => {
   const [isName, setIsName] = useState(false);
+  const [isPhone, setIsPhone] = useState(false);
+  const [isMail, setIsMail] = useState(false);
+  
   const [isDisabled, setIsDisabled] = useState(true);
 
-  const handlerChange = (event) => {
+  const [isValueName, setIsValueName] = useState(" ");
+  const [isValuePhone, setIsValuePhone] = useState(" ");
+  const [isValueMail, setIsValueMail] = useState(" ");
+ 
+const handlerClick = () => {
+ console.log(isValueName, isValuePhone, isValueMail);
+};
+  const handlerChangeName = (event) => {
     const value = event.target.value;
 
     if (value.length > 0) {
-      setIsName(true);
-      console.log(value);
+      setIsName(true); 
+      setIsValueName(value);
     } else {
       setIsName(false);
     }
-
     setIsDisabled(value.length === 0);
+    
   };
+  const handlerChangePhone = (event) => {
+    const value = event.target.value;
+
+    if (value.length > 0) {
+      setIsPhone(true); 
+      setIsValuePhone(value);
+    } else {
+      setIsPhone(false);
+    }
+    setIsDisabled(value.length === 0);
+    
+  };
+  const handlerChangeMail = (event) => {
+    const value = event.target.value;
+
+    if (value.length > 0) {
+      setIsMail(true); 
+      setIsValueMail(value);
+    } else {
+      setIsMail(false);
+    }
+    setIsDisabled(value.length === 0);
+    
+  };
+
 
   return (
     <div className="contacts-container">
@@ -83,7 +118,7 @@ export const ContatoPage = () => {
               <input
                 className="contacts-login-name-input"
                 placeholder="Seu nome"
-                onChange={handlerChange}
+                onChange={(a) => handlerChangeName(a) }
               />
             </div>
             <div className="contacts-login-phone-box">
@@ -94,7 +129,7 @@ export const ContatoPage = () => {
                 type="tel"
                 name="phone"
                 required
-                onChange={handlerChange}
+                onChange={(b) => handlerChangePhone(b)}
               />
             </div>
           </div>
@@ -106,7 +141,7 @@ export const ContatoPage = () => {
               name="email"
               required
               placeholder="Seu email"
-              onChange={handlerChange}
+              onChange={(c) => handlerChangeMail(c)}
             />
           </div>
           <div className="contacts-login-message-box">
@@ -120,7 +155,7 @@ export const ContatoPage = () => {
             className="contacts-login-submit-button"
             type="submit"
             disabled={isDisabled}
-            
+            onClick={handlerClick}
           >
             Enviar Mensagem
           </button>
