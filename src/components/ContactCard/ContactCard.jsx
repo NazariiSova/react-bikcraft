@@ -8,13 +8,13 @@ export const ContactCard = ({img, alt, title, listLocation, listContacts, time})
       <div className="contacts-card-title">{title}</div>
       <div className="contacts-card-list-box">
         <ul className="contacts-card-list-location">
-          {listLocation.map((item, index) => (
-            <li key={`location-${index}`}>{item}</li>
+          {listLocation.map((item) => (
+            <li key={`location-${item}`}>{item}</li>
           ))}
         </ul>
         <ul className="contacts-card-list-contacts">
-          {listContacts.map((item, index) => (
-            <li key={`contact-${index}`}>{item}</li>
+          {listContacts.map((item) => (
+            <li key={`contact-${item}`}>{item}</li>
           ))}
         </ul>
       </div>

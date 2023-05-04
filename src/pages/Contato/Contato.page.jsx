@@ -22,19 +22,19 @@ export const ContatoPage = () => {
   
   const [isDisabled, setIsDisabled] = useState(true);
 
-  const [isValueName, setIsValueName] = useState(" ");
-  const [isValuePhone, setIsValuePhone] = useState(" ");
-  const [isValueMail, setIsValueMail] = useState(" ");
+  const [ValueName, setValueName] = useState(" ");
+  const [ValuePhone, setValuePhone] = useState(" ");
+  const [ValueMail, setValueMail] = useState(" ");
  
 const handlerClick = () => {
- console.log(isValueName, isValuePhone, isValueMail);
+ console.log(ValueName, ValuePhone, ValueMail);
 };
   const handlerChangeName = (event) => {
     const value = event.target.value;
 
     if (value.length > 0) {
       setIsName(true); 
-      setIsValueName(value);
+      setValueName(value);
     } else {
       setIsName(false);
     }
@@ -46,7 +46,7 @@ const handlerClick = () => {
 
     if (value.length > 0) {
       setIsPhone(true); 
-      setIsValuePhone(value);
+      setValuePhone(value);
     } else {
       setIsPhone(false);
     }
@@ -58,7 +58,7 @@ const handlerClick = () => {
 
     if (value.length > 0) {
       setIsMail(true); 
-      setIsValueMail(value);
+      setValueMail(value);
     } else {
       setIsMail(false);
     }
@@ -118,7 +118,7 @@ const handlerClick = () => {
               <input
                 className="contacts-login-name-input"
                 placeholder="Seu nome"
-                onChange={(a) => handlerChangeName(a) }
+                onChange={handlerChangeName}
               />
             </div>
             <div className="contacts-login-phone-box">
@@ -129,7 +129,7 @@ const handlerClick = () => {
                 type="tel"
                 name="phone"
                 required
-                onChange={(b) => handlerChangePhone(b)}
+                onChange={handlerChangePhone}
               />
             </div>
           </div>
@@ -141,7 +141,7 @@ const handlerClick = () => {
               name="email"
               required
               placeholder="Seu email"
-              onChange={(c) => handlerChangeMail(c)}
+              onChange={handlerChangeMail}
             />
           </div>
           <div className="contacts-login-message-box">

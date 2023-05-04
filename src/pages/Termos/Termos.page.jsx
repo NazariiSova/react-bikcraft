@@ -12,12 +12,12 @@ const TermosPage = () => {
       </div>
       <div className="termos-list-container">
            <div className="termos-list-box">
-        {data.map((item) => (
+        {data.map((item, i) => (
           <li className="termos-list-title-box" key={item.title}>
-            <h3 className="termos-list-title">{item.title}</h3>
+            <h3 className="termos-list-title">{i+1}. {item.title}</h3>
             <ul className="termos-list-description-box">
-              {item.list.map((listItem, index) => (
-                <li className="termos-list-description" key={index}>{listItem}</li>
+              {item.list.map((listItem, c) => (
+                <li className="termos-list-description" key={listItem}>{i+1}.{c+1} {listItem}</li>
               ))}
             </ul>
           </li>
