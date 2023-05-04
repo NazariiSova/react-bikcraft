@@ -1,0 +1,65 @@
+@import "../../components/styles/variables.scss";
+@import "../../components/styles/mixins.scss";
+
+.termos {
+  &-container {
+    background-color: #f5f5f5;
+  }
+  &-header {
+    height: 223px;
+    padding-left: 12%;
+
+    background-color: $dark-color;
+    &-title {
+      @include title-white;
+      color: white;
+      margin-top: 8px;
+
+      &-small {
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        color: white;
+        padding-top: 60px;
+      }
+    }
+  }
+  &-list {
+    &-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin:80px 0 140px 0;
+    }
+    &-box {
+      list-style: none;
+      margin-top: 48px;
+
+    }
+    &-title {
+      font-family: Poppins;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 23px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-top: 50px;
+    }
+    &-description {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      list-style: none;
+      color: $dark-gray-color;
+      margin-left: -40px;
+    }
+  }
+}

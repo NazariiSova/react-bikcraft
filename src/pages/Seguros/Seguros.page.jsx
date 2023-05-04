@@ -4,12 +4,7 @@ import Footer from "../../components/footer/Footer";
 import { SupportCard } from "../../components/support-card/SupportCard";
 import { dataAdvantages } from "../../components/arrayAdvantages/arrayAdvantages"
 
-import bike from "../../components/img/Icons/bike.png";
-import leaf from "../../components/img/Icons/leaf.png";
-import lock from "../../components/img/Icons/lock.png";
-import material from "../../components/img/Icons/material.png";
-import speed from "../../components/img/Icons/speed.png";
-import traker from "../../components/img/Icons/tracker.png";
+
 import { DropDownFAQ } from "../../components/dropDownFAQ/DropDownFAQ";
 
 
