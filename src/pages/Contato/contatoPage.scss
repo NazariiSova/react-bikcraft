@@ -134,6 +134,7 @@
     height: 576px;
     width: 80%;
     background-color: white;
+
     &-first-inputs {
       margin-top: 60px;
       margin-left: 10%;
@@ -161,6 +162,7 @@
         max-width: 600px;
         background-color: #ededed;
         border-radius: 5px;
+        width: 65%;
       }
     }
     &-phone {
@@ -172,13 +174,14 @@
         letter-spacing: 0em;
         text-align: left;
         color: $dark-color;
+        margin-left: -21%;
       }
       &-input {
         height: 40px;
-        min-width: 100px;
-        max-width: 600px;
+        margin-left: -21%;
         background-color: #ededed;
         border-radius: 5px;
+        width: 65%;
       }
       &-box {
         flex-grow: 1;
