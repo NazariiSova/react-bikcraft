@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-bikcraft/static/css/main.20db4717.css",
-    "main.js": "/react-bikcraft/static/js/main.21c56f23.js",
+    "main.css": "/react-bikcraft/static/css/main.7e6580b0.css",
+    "main.js": "/react-bikcraft/static/js/main.6ffa46f4.js",
     "static/media/diferencial.png": "/react-bikcraft/static/media/diferencial.46c8ad8206476a8b3fc4.png",
     "static/media/seguros.png": "/react-bikcraft/static/media/seguros.ec29eba273952cba06e5.png",
     "static/media/depoimento.png": "/react-bikcraft/static/media/depoimento.df830a2e6e8c55388d9b.png",
@@ -13,11 +13,11 @@
     "static/media/rio.png": "/react-bikcraft/static/media/rio.02e11f2ba7ca47a8d854.png",
     "static/media/dec.svg": "/react-bikcraft/static/media/dec.8aa345be1f72f88d780a3fa1a36c3613.svg",
     "index.html": "/react-bikcraft/index.html",
-    "main.20db4717.css.map": "/react-bikcraft/static/css/main.20db4717.css.map",
-    "main.21c56f23.js.map": "/react-bikcraft/static/js/main.21c56f23.js.map"
+    "main.7e6580b0.css.map": "/react-bikcraft/static/css/main.7e6580b0.css.map",
+    "main.6ffa46f4.js.map": "/react-bikcraft/static/js/main.6ffa46f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.20db4717.css",
-    "static/js/main.21c56f23.js"
+    "static/css/main.7e6580b0.css",
+    "static/js/main.6ffa46f4.js"
   ]
 }
